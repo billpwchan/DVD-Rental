@@ -2,9 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bill's DVD Rental</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+          integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+        <img class="navbar-logo" src="./img/ucl_cs_logo.jpg" alt="UCL CS Department">
+        DVD Rental Business
+    </a>
 
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-home"></i>
+                    Home
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./myAccount.html">
+                    <i class="fas fa-user-circle"></i>
+                    My Account
+                </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<div class="top-banner container-fluid ">
+    <div class="row">
+        <div class="mr-auto col-4">
+            <div class="login login-signin my-4">
+                <div class="login-body">
+                    <h5 class="login-title text-center">
+                        Sign In
+                    </h5>
+                    <form class="login-form">
+                        <div class="login-form-group">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
+                                   required autofocus>
+                            <label for="inputEmail">Email address</label>
+                        </div>
+                        <div class="login-form-group">
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                   required>
+                            <label for="inputPassword">Password</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Remember password</label>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
